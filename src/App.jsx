@@ -15,6 +15,10 @@ function App() {
           <Route path="/" element={<ListEmployee />}></Route>
           <Route path="/employee" element={<ListEmployee />}></Route>
           <Route path="/employee/addEmployee" element={<AddEmployee />}></Route>
+          <Route
+            path="/employee/updateEmployee/:id"
+            element={<AddEmployee />}
+          ></Route>
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
